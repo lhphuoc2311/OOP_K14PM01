@@ -37,4 +37,8 @@ public class Account {
         System.out.println("Account balance: " + account_banlance);
     }
 
+    void transfer(){
+        System.out.println("chuyển tiền ...");
+    }
+
 }
