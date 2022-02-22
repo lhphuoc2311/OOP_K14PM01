@@ -8,11 +8,19 @@ public class IntSquare {
 
     private double squareValue;//implementation
 
+
+    //Abstraction
+
     //interface
-    public double getSquareMath(int value){
+    public double getSquare(int value){
         //implementation - thuật toán
-        this.squareValue = Math.pow(value, 2);//Math
+        this.calculateSquare(value);
         return this.squareValue;
+    }
+
+    //implementation
+    private void calculateSquare(int value){
+        this.squareValue = Math.pow(value, 2);//Math
     }
     
 }
