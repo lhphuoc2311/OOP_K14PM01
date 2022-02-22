@@ -20,7 +20,7 @@ public class IntSquare {
 
     //implementation
     private void calculateSquare(int value){
-        this.squareValue = Math.pow(value, 2);//Math
+        this.squareValue = value * value;//Math
     }
     
 }
