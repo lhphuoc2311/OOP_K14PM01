@@ -7,6 +7,7 @@ package oo.shapeapp;
 public class Circle {
 
     // attribute
+    //implementation
     String soundFile;// Xuân - Hạ - Thu - Đông
     // method
 
@@ -14,7 +15,7 @@ public class Circle {
         this.soundFile = soundFile;
     }
 
-    void rotate() {
+    /**default */ void rotate() {
         System.out.println("Rotating 360 ...");
         this.playSound();
     }

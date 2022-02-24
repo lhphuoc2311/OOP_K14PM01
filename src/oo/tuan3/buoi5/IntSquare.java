@@ -9,6 +9,7 @@ public class IntSquare {
     private double squareValue;//implementation
 
 
+    //Encapsulation
     //Abstraction
 
     //interface
