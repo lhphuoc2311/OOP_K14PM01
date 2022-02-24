@@ -13,6 +13,14 @@ public class ShapeTestDrive {
         circle.playSound();
 
 
+        Amoeba amoeba = new Amoeba();
+        amoeba.setxPoint(5);
+        amoeba.setyPoint(10);
+        amoeba.setSoundFile("amoeba.hif");
+        amoeba.rotate();
+        amoeba.playSound();
+
+
     }
     
 }

@@ -17,6 +17,13 @@ public void setSoundFile(String soundFile) {
     this.soundFile = soundFile;
 }
 
+/**
+ * @return the soundFile
+ */
+public String getSoundFile() {
+    return soundFile;
+}
+
 public Shape(){}
 
 public Shape(String soundFile) {

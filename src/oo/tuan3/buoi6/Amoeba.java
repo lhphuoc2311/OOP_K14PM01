@@ -4,35 +4,37 @@
 */
 package oo.tuan3.buoi6;
 
-public class Amoeba {
+public class Amoeba extends Shape {
 
-    // attribute
-    String soundFile;// Xuân - Hạ - Thu - Đông
     //tọa độ điểm
-    double xPoint;
-    double yPoint;
+    private double xPoint;
+    private double yPoint;
 
-    // method
-    public Amoeba(String soundFile) {
-        this.soundFile = soundFile;
+    /**
+     * @param xPoint the xPoint to set
+     */
+    public void setxPoint(double xPoint) {
+        this.xPoint = xPoint;
     }
 
-    public Amoeba(String soundFile, double xPoint, double yPoint){
-        this(soundFile);
-        this.xPoint = xPoint;
+    /**
+     * @param yPoint the yPoint to set
+     */
+    public void setyPoint(double yPoint) {
         this.yPoint = yPoint;
     }
 
+
+    @Override
     void rotate() {
 
         System.out.println("Rotating 360 at xPoint: " + this.xPoint + " yPoint: " + this.yPoint);
-        this.playSound();
-
     }
 
+    @Override
     void playSound() {
         //code xử lý cho file .hif
-        System.out.println("Play file " + this.soundFile + " music");
+        System.out.println("Play file .hif " + this.getSoundFile() + " music");
 
     }
 
