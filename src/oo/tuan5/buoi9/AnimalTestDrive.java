@@ -26,8 +26,14 @@ public class AnimalTestDrive {
 
         List list = new ArrayList<>();
 
+        
+
         //khong code vầy
         ArrayList arrayList = new ArrayList<>();
+
+        int array[] = new int[5];
+        
+        
 
     }
     

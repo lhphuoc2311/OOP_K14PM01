@@ -4,12 +4,13 @@
 */
 package oo.tuan4.buoi8;
 
+import java.io.Serializable;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-public class HangThucPham {
+public class HangThucPham implements Serializable {
 
     private String maHang;
     private String tenHang;
