@@ -11,7 +11,7 @@ public class Dog extends Animal implements Pet, IntName {
 
     //cai de hanh vi
     @Override
-    protected void makeNoise() {
+    public void makeNoise() {
         System.out.println("Making gau gau ...");
     }
 
