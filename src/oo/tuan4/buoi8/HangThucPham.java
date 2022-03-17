@@ -149,4 +149,11 @@ public class HangThucPham implements Serializable {
 
     }
 
+    /**
+     * @return the tenHang
+     */
+    public String getTenHang() {
+        return tenHang;
+    }
+
 }
