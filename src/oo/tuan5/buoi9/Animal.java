@@ -10,6 +10,14 @@ public abstract class Animal {
     private String picture;
     private String food;
     private int hunger;//mức độ dói bụng 1 2 3
+    private String ten;
+
+    /**
+     * @return the ten
+     */
+    public String getTen() {
+        return ten;
+    }
 
     private String name;
 

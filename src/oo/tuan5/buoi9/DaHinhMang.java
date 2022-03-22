@@ -4,6 +4,11 @@
 */
 package oo.tuan5.buoi9;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import oo.tuan5.buoi9.robot.RobotDog;
+
 public class DaHinhMang {
 
     public static void main(String[] args) {
@@ -24,10 +29,31 @@ public class DaHinhMang {
 
         for (Animal animal : dsAnimal) {
             
-            if(animal instanceof Cat){
+           // if(animal instanceof Cat){
+               //gửi chỉ 1 thông điệp
                 animal.makeNoise();//Ket qua DA hinh
-            }
+           // }
         }
+
+        //Pet dsPet[] = new Pet[2];
+        List<Pet> listPet = new ArrayList<>();
+        Dog dogPet = new Dog();
+        RobotDog robotDog = new RobotDog();
+        Cat catPet = new Cat();
+
+        listPet.add(dogPet);
+        listPet.add(robotDog);
+        listPet.add(catPet);
+
+        for (Pet pet : listPet) {
+            pet.beFriendly();
+        }
+
+        // for (Pet pet : dsPet) {
+            //Gui Thong diep - message
+            // pet.beFriendly();
+            // pet.play();
+        // }
 
     }
 
