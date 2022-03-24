@@ -15,6 +15,8 @@ public class DogTestDrive {
         Dog dog2 = new Dog();
         System.out.println("So LUong cho: " + Dog.getCount());
 
+        Math.pow(3, 3);
+
     }
 
 }
