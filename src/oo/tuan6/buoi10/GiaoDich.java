@@ -55,6 +55,31 @@ public abstract class GiaoDich {
                 + ", ngayGiaoDich=" + ngayGiaoDich + "]";
     }
 
+    /**
+     * @return the maGiaoDich
+     */
+    public String getMaGiaoDich() {
+        return maGiaoDich;
+
+
+    }
+
+
+    /**
+     * @param donGia the donGia to set
+     */
+    public void setDonGia(double donGia) {
+        this.donGia = donGia;
+    }
+
+
+    /**
+     * @param dienTich the dienTich to set
+     */
+    public void setDienTich(double dienTich) {
+        this.dienTich = dienTich;
+    }
+
     
     
 }

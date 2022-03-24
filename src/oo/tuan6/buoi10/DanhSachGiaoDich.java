@@ -62,5 +62,45 @@ public class DanhSachGiaoDich {
         }
         return tienGDDat/dem;
     }
+
+    //xoa
+    //timkiem
+    public GiaoDich timKiemGiaoDich(String maGiaoDich){
+        GiaoDich giaoDich = null;
+        for (GiaoDich gd : danhSach) {
+            if(gd.getMaGiaoDich().equalsIgnoreCase(maGiaoDich)){
+                giaoDich = gd;
+            }
+        }
+        return giaoDich;
+    }
+    //sua
+
+    public GiaoDichDat timKiemGiaoDichDat(String maGiaoDich){
+        GiaoDichDat giaoDich = null;
+        for (GiaoDich gd : danhSach) {
+            if(gd.getMaGiaoDich().equalsIgnoreCase(maGiaoDich) &&
+            gd instanceof GiaoDichDat){
+                giaoDich = (GiaoDichDat) gd;
+            }
+        }
+        return giaoDich;
+    }
+
+
+    public void xoaGiaoDich(GiaoDich giaoDich){
+        this.danhSach.remove(giaoDich);
+    }
+
+    //tim vi tri cua Giao Dich torng danh sach
+    public int timViTriCuaGD(GiaoDich giaoDich){
+        int viTri = -1;
+        viTri = this.danhSach.indexOf(giaoDich);
+        return viTri;
+    }
+
+    public void suaGiaoDich(int viTri, GiaoDich giaoDich){
+        this.danhSach.set(viTri, giaoDich);
+    }
     
 }
