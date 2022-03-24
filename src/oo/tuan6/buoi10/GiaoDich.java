@@ -11,6 +11,7 @@ public abstract class GiaoDich {
     private Date ngayGiaoDich;
     private double donGia;
     private double dienTich;
+    private static int count;
     //setter
     //getter
 
@@ -31,7 +32,13 @@ public abstract class GiaoDich {
 
     public abstract double tinhTien();
 
-    public GiaoDich(){}
+    public GiaoDich(){
+        this.tangCount();
+    }
+
+    private void tangCount(){
+        count++;
+    }
     /* (non-Javadoc)
      * @see java.lang.Object#toString()
      */
@@ -47,6 +54,7 @@ public abstract class GiaoDich {
         this.ngayGiaoDich = ngayGiaoDich;
         this.donGia = donGia;
         this.dienTich = dienTich;
+        this.tangCount();
     }
 
     @Override
